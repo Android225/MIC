@@ -1,0 +1,78 @@
+### GET request to example server
+
+#service 1
+###
+
+###
+GET http://localhost:8000/
+###
+
+#GET http://localhost:8000/docs
+###
+GET http://localhost:8000/call_service2
+###
+
+###
+PUT http://localhost:8000/update_item/2
+Content-Type: application/json
+
+{
+  "name": "Обновленный элемент"
+}
+###
+
+###
+DELETE http://localhost:8000/delete_item/3
+###
+
+###
+PATCH http://localhost:8000/patch_item/4
+Content-Type: application/json
+
+{
+  "name": "Частично обновленный элемент"
+}
+###
+
+
+#service2
+#GET http://158.160.86.114:8001/data
+
+###
+GET http://localhost:8001/data
+###
+
+###
+POST http://localhost:8001/add_item
+Content-Type: application/json
+
+{
+  "name": "Новый элемент"
+}
+###
+
+###
+PUT http://localhost:8001/update_item/5
+Content-Type: application/json
+
+{
+  "name": "Обновленный элемент"
+}
+
+###
+
+###
+DELETE http://localhost:8001/delete_item/6
+###
+
+###
+PATCH http://localhost:8001/patch_item/7
+Content-Type: application/json
+
+{
+  "name": "Частично обновленный элемент"
+}
+
+###
+
+
